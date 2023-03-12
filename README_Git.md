@@ -2,8 +2,9 @@
 
 Tổng hợp các lệnh, trường hợp phổ biến, được sử dụng và xử lý trong quá trình phát triển mã nguồn.
 
-<img src="./assets/git/intro.png" width="100%" />
-##### Source: https://www.getdbt.com/ui/img/guides/analytics-engineering/git-workflow-1.png
+<img src="./assets/git/intro.png" width="100%"/>
+
+###### Source: https://www.getdbt.com/ui/img/guides/analytics-engineering/git-workflow-1.png
 
 ## Ghi chú
 
