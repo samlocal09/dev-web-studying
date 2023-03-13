@@ -167,19 +167,19 @@ Không có luật nào buộc phải commit theo cách a, b, c. Nhưng tôi vẫ
 > Tóm gọn commit message phổ biến: "hành động(phạm vi): mô tả ngắn" 
 
 Hành động bao gồm:
-	+ fix: fix bug, fix bất cứ thứ gì
-	+ feat: implement một feature mới. Đa số dev commit mỗi cuối ngày cho feature đang triển khai. Tôi thấy dùng từ feat này hợp lý khi làm xong feature đó và gộp mọi commit lại thành một thì dùng cái này.
-	+ style: khi update UI, nhựng thứ không ảnh hưởng business app
-	+ refactor: khi update lại method, update api model,...
-	+ docs: khi thêm mô tả, guideline, comment code...
-	+ test: chỉnh sửa, thêm test cho method
-	+ perf: cải thiên performance cho source code
-	+ chore: thay đổi mấy thứ linh tinh (sử tên image, update gitignore)
-	+ build: update liên quan devops
++ fix: fix bug, fix bất cứ thứ gì
++ feat: implement một feature mới. Đa số dev commit mỗi cuối ngày cho feature đang triển khai. Tôi thấy dùng từ feat này hợp lý khi làm xong feature đó và gộp mọi commit lại thành một thì dùng cái này.
++ style: khi update UI, nhựng thứ không ảnh hưởng business app
++ refactor: khi update lại method, update api model,...
++ docs: khi thêm mô tả, guideline, comment code...
++ test: chỉnh sửa, thêm test cho method
++ perf: cải thiên performance cho source code
++ chore: thay đổi mấy thứ linh tinh (sử tên image, update gitignore)
++ build: update liên quan devops
 	
 vd:
-	+ fix(dashboard): listing data returned is not correct
-	+ refactor(user access): update model returned of API get user access
++ fix(dashboard): listing data returned is not correct
++ refactor(user access): update model returned of API get user access
 
 Ngoài ra cũng có thêm phần body, footer. Chỉ cần xuống 1 dòng
 
