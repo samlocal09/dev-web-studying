@@ -117,7 +117,7 @@ Việc commit/push/merge,... code diễn ra thường xuyên. Có những lệnh
 
 TortoiseGit là một trong những cộng cụ như vậy. Hình dung thay vì gõ lệnh, bạn có thể dùng những chức năng của nó qua giao diện. Commit code luôn cần bạn là người tự review đầu tiên, bạn có thể dễ dàng thay được thay đổi trước và sau, cũng như loại bỏ những mã code dùng để test mà quên xoá chẳng hạn... Và cũng tạo thuận tiên trong việc xử lý conflict.
 
-## Tips
+## Dùng file batch để chuyển env
 
 Trong lúc làm việc không hẳn là bạn chỉ làm việc trong một workspace duy nhất, đôi lúc bạn cũng phải fixbug. Chuyển môi trường dev, staging, uat qua lại nhiều lần. Để giúp tăng chút ít thời gian cho việc này, bạn có thể tạo file lệnh chạy tự động cho các môi trường. Ví dụ trên windows là file .batch
 
@@ -152,5 +152,43 @@ exit /b 1
 pause
 ```
 
+## Git commit message
+Commit message ngắn gọn quá cũng mắc mệt.
 
+Vd:
+```
+	add file
+	update code
+	change template
+```
 
+Không có luật nào buộc phải commit theo cách a, b, c. Nhưng tôi vẫn sẽ theo quy tắc chung của dev, tham khảo bằng cách tìm từ khoá "naming convention". 
+
+> Tóm gọn commit message phổ biến: "hành động(phạm vi): mô tả ngắn" 
+
+Hành động bao gồm:
+	+ fix: fix bug, fix bất cứ thứ gì
+	+ feat: implement một feature mới. Đa số dev commit mỗi cuối ngày cho feature đang triển khai. Tôi thấy dùng từ feat này hợp lý khi làm xong feature đó và gộp mọi commit lại thành một thì dùng cái này.
+	+ style: khi update UI, nhựng thứ không ảnh hưởng business app
+	+ refactor: khi update lại method, update api model,...
+	+ docs: khi thêm mô tả, guideline, comment code...
+	+ test: chỉnh sửa, thêm test cho method
+	+ perf: cải thiên performance cho source code
+	+ chore: thay đổi mấy thứ linh tinh (sử tên image, update gitignore)
+	+ build: update liên quan devops
+	
+vd:
+	+ fix(dashboard): listing data returned is not correct
+	+ refactor(user access): update model returned of API get user access
+
+Ngoài ra cũng có thêm phần body, footer. Chỉ cần xuống 1 dòng
+
+vd:
+```
+	fix(dashboard): listing data returned is not correct
+	
+	the data should be calculated by XXX condition
+	
+	bugid: #112233
+	
+``` 
